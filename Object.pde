@@ -13,7 +13,6 @@ class Object {
     togeboy.enableMaterial();
     togeboy.enableTexture();
     pushMatrix();
-    rotateY(radians(mouseX));
     togeboy.draw();
     popMatrix();
   }

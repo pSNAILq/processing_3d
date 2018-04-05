@@ -20,6 +20,11 @@ class Player {
     //crosshair(mouseX,mouseY);
   }
 
+  void p() {
+    //    println(eye.x+":"+eye.y+":"+eye.z);
+    camera(eye.x, -150, eye.z, eye.x+direction.x, -150, eye.z+direction.z, 0, 1, 0);
+    //camera(eye.x, eye.y, eye.z, center.x, center.y, center.z, 0, 1, 0);
+  }
 
   void key_act() {
 
@@ -62,11 +67,6 @@ class Player {
     //着地かつ跳躍力限界以内
   }
 
-  void p() {
-    println(eye.x+":"+eye.y+":"+eye.z);
-    camera(eye.z, -150, eye.z, eye.x+direction.x, -150, eye.z+direction.z, 0, 1, 0);
-    //camera(eye.x, eye.y, eye.z, center.x, center.y, center.z, 0, 1, 0);
-  }
 
   void view() {
     mouse_input();

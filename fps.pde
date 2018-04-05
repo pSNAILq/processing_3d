@@ -7,7 +7,7 @@ void setup() {
   size(1000, 1000, OPENGL);
   frameRate(30);
   smooth();
-  noStroke();
+//  noStroke();
   field = new Field();
 }
 

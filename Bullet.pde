@@ -23,5 +23,7 @@ class Bullet {
       text("["+i+"]"+bullet.get(i), 500, (i*15)+15);
     }
   }
+  
+
 }
 
