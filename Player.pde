@@ -1,7 +1,7 @@
 class Player {
 
   PVector direction = new PVector(0, 0, 1);
-  PVector eye = new PVector(0, 0, 1);
+  PVector eye = new PVector(0, 0, 0);
   float theta = 0;
   float jump_power = 0;//脚力
   float g = 4;
@@ -46,7 +46,7 @@ class Player {
   }
 
   void mouse_input() {
-    theta = map(mouseX, 0.width, -PI, PI);
+    theta = map(mouseX, 0, width, -PI, PI);
 
     direction.x = cos(theta);
     direction.z = sin(theta);
