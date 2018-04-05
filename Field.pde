@@ -1,19 +1,22 @@
 class Field {
   ArrayList<Bullet> bullets = new ArrayList<Bullet>(); 
-  Bullet b;
-  Player p;
+  Bullet bullet;
+  Player player;
+  Enemy enemy;
   Object obj;
-  
+
   Field() {
-    b = new Bullet();
-    p = new Player();
+    bullet = new Bullet();
+    player = new Player();
+    enemy = new Enemy(0, 0, 0);
     obj = new Object();
   }
 
   void run() {
-//    b.run();
-    p.run();
+    //    b.run();
+    player.run();
     obj.run();
+    enemy.draw();
   }
 }
 
